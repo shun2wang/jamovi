@@ -1,0 +1,20 @@
+name: update-i18n
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  update-i18n:
+    runs-on: ubuntu-latest
+    
+    steps:
+     - uses: actions/checkout@v3
+     
+     - name: ready tools
+       run: |
+            npm install -g git+https://git@github.com/jamovi/jamovi-i18n.git
+            j18n --build
+            
+     - name: Update i18n
+            j18n --update jamovi
+            git diff
