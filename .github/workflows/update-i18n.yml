@@ -25,5 +25,5 @@ jobs:
      - name: Compile jamovi
        run: |
             echo `npm install -g git+https://git@github.com/jamovi/jamovi-compiler.git`
-            echo `jmc --install ${{ github.workspace }}`
+            echo `jmc --build ./**/jamovi`
             git diff
