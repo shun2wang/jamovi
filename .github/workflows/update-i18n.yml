@@ -20,4 +20,4 @@ jobs:
      - name: Update i18n
        run: |
             echo `ji8n --build ./**/jamovi`
-            git diff
+            echo `git diff`
