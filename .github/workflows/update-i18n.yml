@@ -14,8 +14,9 @@ jobs:
      
      - name: ready tools
        run: |
-            npm install -g git+https://git@github.com/jamovi/jamovi-i18n.git
-            j18n --build
+            echo `npm install -g git+https://git@github.com/jamovi/jamovi-i18n.git`
+            cd jamovi-i18n
+            echo `j18n --build`
             
      - name: Update i18n
        run: |
