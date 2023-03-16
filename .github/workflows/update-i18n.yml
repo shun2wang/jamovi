@@ -21,3 +21,9 @@ jobs:
        run: |
             echo `ji8n --build ${{ github.workspace }}`
             echo `git diff`
+    
+     - name: Compile jamovi
+       run: |
+            echo `npm install -g git+https://git@github.com/jamovi/jamovi-compiler.git`
+            echo `jmc ${{ github.workspace }}`
+            git diff
