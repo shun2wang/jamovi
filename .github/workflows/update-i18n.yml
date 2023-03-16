@@ -19,5 +19,5 @@ jobs:
             
      - name: Update i18n
        run: |
-            echo `ji8n --build ./**/jamovi`
+            echo `ji8n --build ${{ github.workspace }}`
             echo `git diff`
