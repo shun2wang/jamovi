@@ -15,7 +15,6 @@ jobs:
      - name: ready tools
        run: |
             echo `npm install -g git+https://git@github.com/jamovi/jamovi-i18n.git`
-            cd jamovi-i18n
             echo `ji8n --build`
             
      - name: Update i18n
