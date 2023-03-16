@@ -16,5 +16,6 @@ jobs:
             j18n --build
             
      - name: Update i18n
+       run: |
             j18n --update jamovi
             git diff
