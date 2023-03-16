@@ -19,5 +19,5 @@ jobs:
             
      - name: Update i18n
        run: |
-            echo `ji8n --update --home jamovi`
+            echo `ji8n --home jamovi --update`
             git diff
