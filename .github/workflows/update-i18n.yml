@@ -1,6 +1,8 @@
 name: update-i18n
 
 on: 
+  push:
+  
   workflow_dispatch:
 
 jobs:
